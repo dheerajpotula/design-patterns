@@ -1,5 +1,3 @@
-package com.potulad.learning.designpatterns.strategy;
-
 import com.potulad.learning.designpatterns.strategy.duck.AbstractDuck;
 import com.potulad.learning.designpatterns.strategy.duck.MallardDuck;
 import com.potulad.learning.designpatterns.strategy.duck.RedheadDuck;
@@ -7,7 +5,7 @@ import com.potulad.learning.designpatterns.strategy.duck.RobotDuck;
 import com.potulad.learning.designpatterns.util.SpringContext;
 import lombok.NonNull;
 
-public class Main {
+public class StrategyPatternTest {
     public static void main(String args[]) {
         final MallardDuck mallardDuck = SpringContext.getBean("mallardDuck");
         final RedheadDuck redheadDuck = SpringContext.getBean("redheadDuck");

@@ -3,10 +3,6 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="testLoading" class="com.potulad.learning.designpatterns.Testloading">
-        <constructor-arg value="TestThsiWorks"/>
-    </bean>
-
     <bean id="mallardDuck" class="com.potulad.learning.designpatterns.strategy.duck.MallardDuck">
         <constructor-arg ref="flyWithWings"/>
         <constructor-arg ref="regularDuckQuack"/>

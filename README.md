@@ -1,8 +1,10 @@
 # Design Patterns 
 
 ## Introduction
+
+
 The code examples in this project directory are just to serve 
-as a practise exercise for learning design patterns. While the
+as a practice exercise for learning design patterns. While the
 core problems are from HeadFirst Design Patterns book, I have 
 spring-ified and lombok-ified wherever appropriate.
 
