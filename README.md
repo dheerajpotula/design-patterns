@@ -27,7 +27,7 @@ This pattern allows us to add/remove new observers to the existing
 list of observers without altering any code. Moreover, the observable 
 and the observers are very loosely coupled. 
 
-I implement a pull based observer. 
+I implement a pull based observer and use my own implementation of observer pattern (instead of relying on java provided classes). 
 
 ### Decorator Pattern
 

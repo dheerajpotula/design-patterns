@@ -3,6 +3,7 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+    <!-- Strategy Pattern Beans -->
     <bean id="mallardDuck" class="com.potulad.learning.designpatterns.strategy.duck.MallardDuck">
         <constructor-arg ref="flyWithWings"/>
         <constructor-arg ref="regularDuckQuack"/>
@@ -25,4 +26,26 @@
     <bean id="regularDuckQuack" class="com.potulad.learning.designpatterns.strategy.behavior.RegularDuckQuack" />
     <bean id="squeakyQuack" class="com.potulad.learning.designpatterns.strategy.behavior.SqueakyQuack" />
     <bean id="roboticQuack" class="com.potulad.learning.designpatterns.strategy.behavior.RoboticQuack" />
+
+    <!-- Observer Pattern Beans -->
+    <bean id="weatherData" class="com.potulad.learning.designpatterns.observer.WeatherData">
+        <constructor-arg value="15.1"/>
+        <constructor-arg value="382.2"/>
+        <constructor-arg value="91.4"/>
+    </bean>
+
+    <bean id="currentHumidityDisplay" class="com.potulad.learning.designpatterns.observer.observers.CurrentHumidityDisplay">
+        <constructor-arg ref="weatherData"/>
+    </bean>
+    <bean id="currentTemperatureDisplay" class="com.potulad.learning.designpatterns.observer.observers.CurrentTemperatureDisplay">
+        <constructor-arg ref="weatherData"/>
+    </bean>
+    <bean id="currentPressureDisplay" class="com.potulad.learning.designpatterns.observer.observers.CurrentPressureDisplay">
+        <constructor-arg ref="weatherData"/>
+    </bean>
+    <bean id="goodBeachDayPrediction" class="com.potulad.learning.designpatterns.observer.observers.GoodBeachDayPrediction">
+        <constructor-arg ref="weatherData"/>
+    </bean>
+
+
 </beans>
