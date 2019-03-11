@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="testLoading" class="com.potulad.learning.designpatterns.Testloading">
+        <constructor-arg value="TestThsiWorks"/>
+    </bean>
+
+    <bean id="mallardDuck" class="com.potulad.learning.designpatterns.strategy.duck.MallardDuck">
+        <constructor-arg ref="flyWithWings"/>
+        <constructor-arg ref="regularDuckQuack"/>
+    </bean>
+
+    <bean id="redheadDuck" class="com.potulad.learning.designpatterns.strategy.duck.RedheadDuck">
+        <constructor-arg ref="nullFly"/>
+        <constructor-arg ref="squeakyQuack"/>
+    </bean>
+
+    <bean id="robotDuck" class="com.potulad.learning.designpatterns.strategy.duck.RobotDuck">
+        <constructor-arg ref="flyWithRockets"/>
+        <constructor-arg ref="roboticQuack"/>
+    </bean>
+
+    <bean id="flyWithWings" class="com.potulad.learning.designpatterns.strategy.behavior.FlyWithWings" />
+    <bean id="nullFly" class="com.potulad.learning.designpatterns.strategy.behavior.NullFly" />
+    <bean id="flyWithRockets" class="com.potulad.learning.designpatterns.strategy.behavior.FlyWithRockets" />
+
+    <bean id="regularDuckQuack" class="com.potulad.learning.designpatterns.strategy.behavior.RegularDuckQuack" />
+    <bean id="squeakyQuack" class="com.potulad.learning.designpatterns.strategy.behavior.SqueakyQuack" />
+    <bean id="roboticQuack" class="com.potulad.learning.designpatterns.strategy.behavior.RoboticQuack" />
+</beans>
