@@ -40,10 +40,20 @@ for extension but closed for modification).
 Code example: StarBuzz App - Allowing decoration of bevarages with condiments. 
 
 ### Factory Method Pattern 
-TODO
+Factory Method Pattern encapsulates object creation by allowing the subclasses to create 
+the type of objects they need. 
+ 
+Code example : Pizza Store Application. (See Abstract Factory Pattern below)
 
 ### Abstract Factory Pattern
-TODO
+Abstract Factory Pattern encapsulates object creation and allows classes to create a family
+of related objects. 
+
+Code example : Pizza Store Application. (See Factory Method Pattern above)
+
+The Pizza Store application leverages both patterns, the subclasses decide on the type of pizza ingredient 
+factory to provide (factory method). The subclasses are also composed of Ingredient Factories to 
+create the family of ingredients based on the location (Abstract Factory)
 
 ### Singleton Pattern
 TODO

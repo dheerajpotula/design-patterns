@@ -47,4 +47,8 @@
         <constructor-arg ref="weatherData"/>
     </bean>
 
+    <!-- Factory Pattern Beans -->
+    <bean id="nyPizzaStore" class="com.potulad.learning.designpatterns.factory.factorymethod.NYPizzaStore"/>
+    <bean id="chicagoPizzaStore" class="com.potulad.learning.designpatterns.factory.factorymethod.ChicagoPizzaStore"/>
+
 </beans>
