@@ -51,4 +51,8 @@
     <bean id="nyPizzaStore" class="com.potulad.learning.designpatterns.factory.factorymethod.NYPizzaStore"/>
     <bean id="chicagoPizzaStore" class="com.potulad.learning.designpatterns.factory.factorymethod.ChicagoPizzaStore"/>
 
+    <!-- Singleton Beans -->
+    <bean id="singleton1" class="com.potulad.learning.designpatterns.singleton.SingletonExample" scope="singleton"/>
+    <bean id="singleton2" class="com.potulad.learning.designpatterns.singleton.SingletonExample" scope="singleton"/>
+
 </beans>
