@@ -1,4 +1,4 @@
-package com.potulad.learning.designpatterns.strategy.behavior;
+package com.potulad.learning.designpatterns.strategy.behavior.quacking;
 
 /**
  * Interface to encapsulate all quacking behaviors

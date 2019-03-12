@@ -19,13 +19,13 @@
         <constructor-arg ref="roboticQuack"/>
     </bean>
 
-    <bean id="flyWithWings" class="com.potulad.learning.designpatterns.strategy.behavior.FlyWithWings" />
-    <bean id="nullFly" class="com.potulad.learning.designpatterns.strategy.behavior.NullFly" />
-    <bean id="flyWithRockets" class="com.potulad.learning.designpatterns.strategy.behavior.FlyWithRockets" />
+    <bean id="flyWithWings" class="com.potulad.learning.designpatterns.strategy.behavior.flying.FlyWithWings" />
+    <bean id="nullFly" class="com.potulad.learning.designpatterns.strategy.behavior.flying.NullFly" />
+    <bean id="flyWithRockets" class="com.potulad.learning.designpatterns.strategy.behavior.flying.FlyWithRockets" />
 
-    <bean id="regularDuckQuack" class="com.potulad.learning.designpatterns.strategy.behavior.RegularDuckQuack" />
-    <bean id="squeakyQuack" class="com.potulad.learning.designpatterns.strategy.behavior.SqueakyQuack" />
-    <bean id="roboticQuack" class="com.potulad.learning.designpatterns.strategy.behavior.RoboticQuack" />
+    <bean id="regularDuckQuack" class="com.potulad.learning.designpatterns.strategy.behavior.quacking.RegularDuckQuack" />
+    <bean id="squeakyQuack" class="com.potulad.learning.designpatterns.strategy.behavior.quacking.SqueakyQuack" />
+    <bean id="roboticQuack" class="com.potulad.learning.designpatterns.strategy.behavior.quacking.RoboticQuack" />
 
     <!-- Observer Pattern Beans -->
     <bean id="weatherData" class="com.potulad.learning.designpatterns.observer.WeatherData">

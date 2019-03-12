@@ -1,7 +1,7 @@
 package com.potulad.learning.designpatterns.strategy.duck;
 
-import com.potulad.learning.designpatterns.strategy.behavior.FlyingBehavior;
-import com.potulad.learning.designpatterns.strategy.behavior.QuackingBehavior;
+import com.potulad.learning.designpatterns.strategy.behavior.flying.FlyingBehavior;
+import com.potulad.learning.designpatterns.strategy.behavior.quacking.QuackingBehavior;
 
 public class RedheadDuck extends AbstractDuck {
 
