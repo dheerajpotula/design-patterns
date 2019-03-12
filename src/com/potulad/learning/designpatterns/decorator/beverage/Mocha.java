@@ -1,7 +1,8 @@
 package com.potulad.learning.designpatterns.decorator.beverage;
 
-import lombok.NonNull;
-
+/**
+ * Mocha Beverage
+ */
 public class Mocha extends Beverage {
 
     private static final double cost = 3.8;

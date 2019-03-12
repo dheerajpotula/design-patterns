@@ -1,7 +1,8 @@
 package com.potulad.learning.designpatterns.decorator.beverage;
 
-import lombok.NonNull;
-
+/**
+ * House Blend Beverage
+ */
 public class HouseBlend extends Beverage {
 
     private static final double cost = 5.3;

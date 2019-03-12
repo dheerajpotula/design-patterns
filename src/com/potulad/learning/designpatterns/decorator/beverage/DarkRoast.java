@@ -1,7 +1,5 @@
 package com.potulad.learning.designpatterns.decorator.beverage;
 
-import lombok.NonNull;
-
 /**
  * Dark Roast Beverage
  */
