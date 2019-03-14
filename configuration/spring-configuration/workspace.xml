@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
 
     <!-- Strategy Pattern Beans -->
     <bean id="mallardDuck" class="com.potulad.learning.designpatterns.strategy.duck.MallardDuck">
@@ -51,8 +51,55 @@
     <bean id="nyPizzaStore" class="com.potulad.learning.designpatterns.factory.factorymethod.NYPizzaStore"/>
     <bean id="chicagoPizzaStore" class="com.potulad.learning.designpatterns.factory.factorymethod.ChicagoPizzaStore"/>
 
-    <!-- Singleton Beans -->
+    <!-- Singleton Pattern Beans -->
     <bean id="singleton1" class="com.potulad.learning.designpatterns.singleton.SingletonExample" scope="singleton"/>
     <bean id="singleton2" class="com.potulad.learning.designpatterns.singleton.SingletonExample" scope="singleton"/>
+
+    <!-- Command Pattern Beans -->
+    <bean id="remoteControl" class="com.potulad.learning.designpatterns.command.remote.RemoteControl">
+        <constructor-arg ref="intialRemoteSlots" />
+    </bean>
+
+    <util:map id="intialRemoteSlots">
+        <entry key="1" value-ref="lightOnCommand"/>
+        <entry key="2" value-ref="lightOffCommand"/>
+        <entry key="3" value-ref="ceilingFanOnAndHighCommand"/>
+        <entry key="4" value-ref="ceilingFanOffCommand"/>
+        <entry key="5" value-ref="musicSystemOnCommand"/>
+        <entry key="6" value-ref="musicSystemOffCommand"/>
+        <entry key="7" value-ref="nullCommand"/>
+        <entry key="8" value-ref="nullCommand"/>
+        <entry key="9" value-ref="nullCommand"/>
+        <entry key="10" value-ref="nullCommand"/>
+    </util:map>
+
+    <bean id="light" class="com.potulad.learning.designpatterns.command.devices.Light"/>
+    <bean id="musicSystem" class="com.potulad.learning.designpatterns.command.devices.MusicSystem"/>
+    <bean id="ceilingFan" class="com.potulad.learning.designpatterns.command.devices.CeilingFan"/>
+    <bean id="garageDoor" class="com.potulad.learning.designpatterns.command.devices.GarageDoor"/>
+
+
+    <bean id="lightOnCommand" class="com.potulad.learning.designpatterns.command.remotecommands.LightOnCommand">
+        <constructor-arg ref="light" />
+    </bean>
+    <bean id="lightOffCommand" class="com.potulad.learning.designpatterns.command.remotecommands.LightOffCommand">
+        <constructor-arg ref="light" />
+    </bean>
+
+    <bean id="musicSystemOnCommand" class="com.potulad.learning.designpatterns.command.remotecommands.MusicSystemOnCommand">
+        <constructor-arg ref="musicSystem" />
+    </bean>
+    <bean id="musicSystemOffCommand" class="com.potulad.learning.designpatterns.command.remotecommands.MusicSystemOffCommand">
+        <constructor-arg ref="musicSystem" />
+    </bean>
+
+    <bean id="ceilingFanOnAndHighCommand" class="com.potulad.learning.designpatterns.command.remotecommands.CeilingFanOnAndHighCommand">
+        <constructor-arg ref="ceilingFan" />
+    </bean>
+    <bean id="ceilingFanOffCommand" class="com.potulad.learning.designpatterns.command.remotecommands.CeilingFanOffCommand">
+        <constructor-arg ref="ceilingFan" />
+    </bean>
+
+    <bean id="nullCommand" class="com.potulad.learning.designpatterns.command.remotecommands.NullCommand" />
 
 </beans>
