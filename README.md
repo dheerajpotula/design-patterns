@@ -79,7 +79,7 @@ them directly.
 Code example : Home Theatre Application
 
 ### Template Method Pattern
-TODO
+TODO 
 
 ### Iterator Pattern
 TODO
