@@ -2,6 +2,7 @@ package com.potulad.learning.designpatterns.command.remotecommands;
 
 import com.potulad.learning.designpatterns.command.devices.MusicSystem;
 import lombok.AllArgsConstructor;
+import lombok.NonNull;
 
 /**
  * Command to turn off the music system.
@@ -9,6 +10,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class MusicSystemOffCommand implements RemoteCommand {
 
+    @NonNull
     private final MusicSystem musicSystem;
 
     @Override

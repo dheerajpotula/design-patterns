@@ -56,23 +56,6 @@
     <bean id="singleton2" class="com.potulad.learning.designpatterns.singleton.SingletonExample" scope="singleton"/>
 
     <!-- Command Pattern Beans -->
-    <bean id="remoteControl" class="com.potulad.learning.designpatterns.command.remote.RemoteControl">
-        <constructor-arg ref="intialRemoteSlots" />
-    </bean>
-
-    <util:map id="intialRemoteSlots">
-        <entry key="1" value-ref="lightOnCommand"/>
-        <entry key="2" value-ref="lightOffCommand"/>
-        <entry key="3" value-ref="ceilingFanOnAndHighCommand"/>
-        <entry key="4" value-ref="ceilingFanOffCommand"/>
-        <entry key="5" value-ref="musicSystemOnCommand"/>
-        <entry key="6" value-ref="musicSystemOffCommand"/>
-        <entry key="7" value-ref="nullCommand"/>
-        <entry key="8" value-ref="nullCommand"/>
-        <entry key="9" value-ref="nullCommand"/>
-        <entry key="10" value-ref="nullCommand"/>
-    </util:map>
-
     <bean id="light" class="com.potulad.learning.designpatterns.command.devices.Light"/>
     <bean id="musicSystem" class="com.potulad.learning.designpatterns.command.devices.MusicSystem"/>
     <bean id="ceilingFan" class="com.potulad.learning.designpatterns.command.devices.CeilingFan"/>
@@ -101,5 +84,23 @@
     </bean>
 
     <bean id="nullCommand" class="com.potulad.learning.designpatterns.command.remotecommands.NullCommand" />
+
+    <bean id="remoteControl" class="com.potulad.learning.designpatterns.command.remote.RemoteControl">
+        <constructor-arg ref="intialRemoteSlots" />
+    </bean>
+
+    <util:map id="intialRemoteSlots" key-type="java.lang.Integer"
+              value-type="com.potulad.learning.designpatterns.command.remotecommands.RemoteCommand">
+        <entry key="1" value-ref="lightOnCommand" />
+        <entry key="2" value-ref="lightOffCommand" />
+        <entry key="3" value-ref="ceilingFanOnAndHighCommand"/>
+        <entry key="4" value-ref="ceilingFanOffCommand"/>
+        <entry key="5" value-ref="musicSystemOnCommand"/>
+        <entry key="6" value-ref="musicSystemOffCommand"/>
+        <entry key="7" value-ref="nullCommand"/>
+        <entry key="8" value-ref="nullCommand"/>
+        <entry key="9" value-ref="nullCommand"/>
+        <entry key="10" value-ref="nullCommand"/>
+    </util:map>
 
 </beans>

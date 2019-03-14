@@ -1,14 +1,15 @@
 package com.potulad.learning.designpatterns.command.remote;
 
 import com.potulad.learning.designpatterns.command.remotecommands.RemoteCommand;
+import lombok.AllArgsConstructor;
 import lombok.NonNull;
 
-import java.util.HashMap;
 import java.util.Map;
 
 /**
  * Remote Control interface
  */
+@AllArgsConstructor
 public class RemoteControl {
 
     /**
@@ -17,13 +18,6 @@ public class RemoteControl {
      * level commands.
      */
     private final Map<Integer, RemoteCommand> remoteSlots;
-
-    public RemoteControl(@NonNull Map<Integer, RemoteCommand> initialSlots) {
-        remoteSlots = initialSlots;
-        for(int i = 0 ; i < 10 ; i ++) {
-            System.out.println(initialSlots.get(i));
-        }
-    }
 
     /**
      * Press a button on the remote.
