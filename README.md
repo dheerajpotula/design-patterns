@@ -52,14 +52,20 @@ be useful when create caches, connection, configuration classes for which having
 around in the JVM doesn't make sense. 
 
 Code Example : Simple Singleton that assumes that we are creating a very expensive singleton 
-(requiring lazy initialization) and we operating under a very high TPS multithreaded system (where accessing the singleton is 
-frequent and therefore has to be efficient). 
+(requiring lazy initialization) and we operating under a very high TPS multithreaded system (where accessing the 
+singleton is frequent and therefore has to be efficient). 
 
 ### Command Pattern
-TODO
+Command Pattern allows us to create classes that encapsulate method invocation. Each method invocation can be 
+encapsulated as a command object. Once we have these command objects, we can use them freely in invokers that just 
+invoke the function on the command object.
+
+Code example : Remote Control Application.
 
 ### Adapter Pattern
-TODO
+Adapter Pattern allows us to adapt one object into another. 
+
+Code example : Turkey Adapted as a Duck. 
 
 ### Facade Pattern
 TODO
