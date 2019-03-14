@@ -103,4 +103,11 @@
         <entry key="10" value-ref="nullCommand"/>
     </util:map>
 
+    <!-- Adapter Pattern Beans -->
+    <bean id="turkey" class="com.potulad.learning.designpatterns.adapter.Turkey" />
+    <bean id="simpleDuck" class="com.potulad.learning.designpatterns.adapter.SimpleDuck" />
+    <bean id="turkeyAdapter" class="com.potulad.learning.designpatterns.adapter.TurkeyDuckAdapter">
+        <constructor-arg ref="turkey"/>
+    </bean>
+
 </beans>
