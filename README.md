@@ -51,7 +51,7 @@ Singleton Pattern allows us to create classes for which only one object exists. 
 be useful when create caches, connection, configuration classes for which having more than one instance floating 
 around in the JVM doesn't make sense. 
 
-Code Example : Simple Singleton that assumes that we are creating a very expensive singleton 
+Code example : Simple Singleton that assumes that we are creating a very expensive singleton 
 (requiring lazy initialization) and we operating under a very high TPS multithreaded system (where accessing the 
 singleton is frequent and therefore has to be efficient). 
 
@@ -68,7 +68,15 @@ Adapter Pattern allows us to adapt one object into another.
 Code example : Turkey Adapted as a Duck. 
 
 ### Facade Pattern
-TODO
+Facade Pattern allows us to create facades of complicated set of classes to simplify using them in client code.
+For example, if we have a set of classes that a client has to use. Writing code that uses all these classes might
+make the client code harder to write and not easy to maintain. Having a facade that encapsulates all these classes
+and exposes simple interface allows client code to depend on the facade instead.  
+
+However, the underlying classes are still available for anyone who needs the flexibility of interacting with 
+them directly.
+ 
+Code example : Home Theatre Application
 
 ### Template Method Pattern
 TODO

@@ -110,4 +110,17 @@
         <constructor-arg ref="turkey"/>
     </bean>
 
+    <!-- Facade Pattern Beans -->
+    <bean id="tv" class="com.potulad.learning.designpatterns.facade.TV"/>
+    <bean id="popcornMachine" class="com.potulad.learning.designpatterns.facade.PopcornMachine"/>
+    <bean id="speakerSystem" class="com.potulad.learning.designpatterns.facade.SpeakerSystem"/>
+    <bean id="lightRemote" class="com.potulad.learning.designpatterns.facade.LightRemote"/>
+
+    <bean id="homeTheatre" class="com.potulad.learning.designpatterns.facade.HomeTheatre">
+        <constructor-arg ref="lightRemote"/>
+        <constructor-arg ref="popcornMachine" />
+        <constructor-arg ref="speakerSystem"/>
+        <constructor-arg ref="tv"/>
+    </bean>
+
 </beans>
