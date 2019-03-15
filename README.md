@@ -89,7 +89,11 @@ calls upon on the sub class only when needed.
 Code example : Beverage Preparation. 
 
 ### Iterator Pattern
-TODO
+Iterator Pattern allows us to iterate over a collection of objects without exposing details about the underlying
+implementation. This will allow client code to stay the same even if we decide to use another datastructure to 
+hold the collection of objects.
+
+Code example : Task Scheduling 
 
 ### Composite Pattern
 TODO
