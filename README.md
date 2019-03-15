@@ -79,7 +79,14 @@ them directly.
 Code example : Home Theatre Application
 
 ### Template Method Pattern
-TODO 
+Template Method Pattern allows us to encapsulate a common procedure or template that is to be shared across multiple 
+sub-classes and at the same time providing hooks into the parent method so that the subclasses can customize the
+common template. 
+
+Template method Pattern adheres to the hollywood principle of "don't call us, we'll call you" where the base class
+calls upon on the sub class only when needed. 
+
+Code example : Beverage Preparation. 
 
 ### Iterator Pattern
 TODO
@@ -93,10 +100,10 @@ TODO
 ### Proxy Pattern
 TODO 
 
-#### Protection Proxy 
-TODO
- 
 #### Remote Proxy
+TODO
+
+#### Protection Proxy 
 TODO
 
 ### Compound Pattern (Simplified MVC)
