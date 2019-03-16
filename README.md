@@ -96,7 +96,11 @@ hold the collection of objects.
 Code example : Task Scheduling 
 
 ### Composite Pattern
-TODO
+Composite Pattern allows us to treat individual objects and composite objects (that contain many individual objects)
+just the same. This pattern will allow client code to avoid unnecessary instanceof checks and treat collection and 
+individual objects the same. 
+
+Code example : Diner Menus.   
 
 ### State Pattern
 TODO
