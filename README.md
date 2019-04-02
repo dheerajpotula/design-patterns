@@ -103,7 +103,10 @@ individual objects the same.
 Code example : Diner Menus.   
 
 ### State Pattern
-TODO
+State pattern allows us to encapsulate object state and change the behavior of a state machine based on the current
+state of a object.
+
+Code example : Basic Gumball Machine
 
 ### Proxy Pattern
 TODO 
