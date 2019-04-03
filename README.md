@@ -109,10 +109,14 @@ state of a object.
 Code example : Basic Gumball Machine
 
 ### Proxy Pattern
-TODO 
+Proxy Pattern allows us to create proxies (or placeholders) of different objects. These proxies can then be used
+to perform different tasks but ultimately aim to act just as if we are interacting with a real object. Given the wide
+use of proxy pattern, added two examples of different usages of the proxy pattern
 
 #### Remote Proxy
-TODO
+Allows us to create local representatives of remote objects.
+
+Code example : Continuous Inventory monitoring of Speakers
 
 #### Protection Proxy 
 TODO
