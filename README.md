@@ -119,7 +119,9 @@ Allows us to create local representatives of remote objects.
 Code example : Continuous Inventory monitoring of Speakers
 
 #### Protection Proxy 
-TODO
+Allows us to grant permissions to certain operations of the proxying object.
+
+Code example : Matchmaking in Objectville.
 
 ### Compound Pattern (Simplified MVC)
 TODO
