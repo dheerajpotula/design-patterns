@@ -124,12 +124,20 @@ Allows us to grant permissions to certain operations of the proxying object.
 Code example : Matchmaking in Objectville.
 
 ### Compound Pattern (Simplified MVC)
-TODO
+Compound Patterns are just patterns that use one or more design patterns to solve a problem. In a real world application,
+things are often messy and require a more complex approach than just applying a straightforward design pattern. MVC is
+an example of compound pattern that employs more than one pattern.
+
+I used a different example from the one in the textbook since they textbook example is more complex than it has to be.
 
 ### Words of Wisdom
-TODO
+After 1 year of trying to use design patterns and identifying places that might be improved using design pattern, I learned
+that often design patterns try to increase the code complexity. This might not be apparent for you but for a new reader, it
+often makes things more harder to grasp. This is also what the authors try to explain in this chapter (sigh!  I wish
+I read this chapter sooner).
 
-### Appendix 
-TODO
-  
+The most important learning out of this is probably that when approaching a problem that can be solved without using any
+patterns and can also be solved by applying a pattern - then surely favor not using a design pattern. This will make
+the code more easier to read and straightforward to understand. While this is a hard advice to follow, coding more along
+with a good feedback loop will allow to learn how to deal with this trade-off.
 
